@@ -1,4 +1,5 @@
 #!/bin/bash
+# Convert webm to mp4.
 
 if [ $# -eq 0 ]
   then

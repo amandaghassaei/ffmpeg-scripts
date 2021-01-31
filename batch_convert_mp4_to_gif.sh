@@ -1,4 +1,5 @@
 #!/bin/bash
+# Convert mp4 to gif.
 
 if [ $# -eq 0 ]
   then
@@ -12,7 +13,6 @@ IFS=$'\n'
 
 # In case height/width not divisible by 2, cut a row of px off:
 # crop=floor(iw/2)*2:floor(ih/2)*2
-
 for i in `find "$1" -name "*.mp4" -type f`;
   do name=`echo "$i" | cut -d'.' -f1`
   echo "$i"

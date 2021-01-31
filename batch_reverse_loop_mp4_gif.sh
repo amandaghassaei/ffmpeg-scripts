@@ -1,4 +1,6 @@
 #!/bin/bash
+# Convert mp4 to another mp4 with a single forward and single reverse playback.
+# Then convert to gif so you get a forward/reverse effect on loop.
 
 if [ $# -eq 0 ]
   then
