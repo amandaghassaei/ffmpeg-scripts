@@ -10,4 +10,8 @@ cd ffmpeg-scripts-main
 chmod +x *.sh
 ```
 
-All batch scripts require a directory be passed in as an argument.
+All batch scripts require a directory be passed in as an argument:
+
+```sh
+./batch_convert_mp4_to_gif.sh PATH_TO_DIRECTORY
+```
