@@ -1,5 +1,5 @@
 # ffmpeg-scripts
-A collection of ffmpeg scripts I'm using to generate gifs and mp4s
+A collection of ffmpeg scripts I'm using to generate gifs and mp4s for (mostly) audioless screencapture videos
 
 ## To install (Mac):
 
