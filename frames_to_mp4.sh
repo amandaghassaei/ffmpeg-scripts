@@ -11,8 +11,8 @@ cd "$current_path"
 filenameNoExt=${1%[0-9].*}
 extension=${1##*.}
 
-# For every selected file, save frame to mp4.
-/usr/local/bin/ffmpeg -i "$filenameNoExt%d.$extension" -r 60 -vf "crop=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -y "$filenameNoExt.mp4"
+# Save frames to mp4.
+/usr/local/bin/ffmpeg -i "$filenameNoExt%d.$extension" -r 30 -vf "crop=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -y "$filenameNoExt.mp4"
 
 
 exit 0
