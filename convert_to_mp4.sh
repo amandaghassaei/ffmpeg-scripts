@@ -15,7 +15,8 @@ do
 	# Check that input and output don't already have same filename.
 	if [ "$filenameNoExt.mp4" = "$f" ]
 	then
-		filenameNoExt="$filenameNoExt_copy"
+		filenameNoExt+="_copy"
+		echo $filenameNoExt
 	fi
 
 	/usr/local/bin/ffmpeg -i "$f" -vf "crop=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -y "$filenameNoExt.mp4"
